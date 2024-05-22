@@ -1,0 +1,367 @@
+:root {
+    --bg-color: #fdfdfd;
+    --beige-color : #dddcc0;
+    --text-color: #333;
+    --main-color: #d3b599;
+    --green-color: #71943E;
+    --lightgreen-color: #aac0aa;
+    --shadow-color: rgba(0, 0, 0, .2);  
+}
+
+
+
+.titreh2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: $margin-1;
+}
+.recapBoutique {
+    margin-bottom: $margin-4;
+    &__table {
+        justify-content: center;
+        margin: auto;
+    }
+    &__total {
+        text-transform: uppercase;
+        font-weight: bold;
+        height: $margin-3;
+    }
+    .title {
+        color: var(--text-color);
+        text-align: center;
+        margin-top: $margin-2;
+        font-size: $h2-mobile;
+    }
+}
+
+.other {
+    margin-bottom: $margin-4;
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+
+    }
+    &__icon {
+        text-decoration: none;
+        color: var(--text-color);
+        max-width: 200px;
+        font-size: 30px;
+    }
+    &__line {
+        text-align: center;
+        text-transform: uppercase;
+
+        &::before {
+            content: "——————— ";
+        }
+        &::after {
+            content: " ————————";
+        }
+    }
+}
+
+
+.contact {
+    margin-bottom: $margin-4;
+    &__label {
+        width: 90%;
+        margin: auto 5%;
+
+        &All {
+            width: 90%;
+            margin: auto 5%;
+        }
+    }
+    &__news {
+        background-color: var(--main-color);
+    }
+    #email {
+        height: 24px;
+        width: 200px;
+    }
+    .iffault {
+        p {
+            margin-top: 5px;
+            margin-left: 5%;
+        }
+    }
+}
+
+
+.label__cursor {
+    cursor: pointer;
+}
+.payment {
+    margin-bottom: $margin-4;
+    &__intro {
+        margin-bottom: $margin-3;
+        width: 90%;
+        margin: auto 5%;
+    }
+    &__all {
+        width: 90%;
+        margin: auto;
+        border: 1px solid var(--main-color);
+        padding: 10px;
+    }
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked {
+        background-color: var(--main-color);
+        border-color: #91755c; 
+    }
+    &__sort {
+        &--checked {
+            display: block;
+            border: 2px solid var(--green-color);
+            margin: -10px;
+            padding: 15px 10px;
+        }
+        &--partial {
+            margin: 15px 0px;
+            display: flex;
+        }
+    }
+
+    .credit {
+        &__intro {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: $margin-1;
+        }
+        &__icon {
+            display: flex;
+            width: 100px;
+            justify-content: space-around;
+        }
+        &__infos {
+            width: 80%;
+            margin: auto;
+            margin-bottom: $margin-1;
+
+            input {
+                width: 96%;
+                line-height: 2;
+            }
+            
+        }
+    }
+    .paypal {
+        &__intro {
+            display: flex;
+            justify-content: space-between;
+        }
+        i {
+            margin: auto 0px;
+            margin-right: 10px;
+        }
+        &__textes {
+            padding: 10px;
+
+            a {
+                color: var(--text-color);
+
+                &:hover, 
+                &:focus {
+                    font-weight: 600;
+                    color: var(--green-color);
+                }
+            }
+        }
+    }
+    .applepay {
+        &__intro {
+            display: flex;
+            justify-content: space-between;
+        }
+        i {
+            margin: auto 0px;
+            margin-right: 10px;
+            font-size: 25px;
+        }
+        &__textes {
+            padding: 10px;
+
+            a {
+                color: var(--text-color);
+
+                &:hover, 
+                &:focus {
+                    font-weight: 600;
+                    color: var(--green-color);
+                }
+            }
+        }
+    }
+    .iffault2 {
+        p {
+            margin-top: -25px;
+            margin-left: 10%;
+        }
+    }
+    .iffault3,
+    .iffault4,
+    .iffault5 {
+        p {
+            margin-top: 5px;
+        }
+    }
+}
+
+.cadeau {
+    margin: auto 5px;
+    margin-bottom: $margin-4;
+
+    textarea {
+        width: 90%;
+        margin: auto;
+        display: block;
+        height: $margin-3;
+    }
+    .label:last-child {
+        text-align: center;
+    }
+    .textarea {
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+.hidden {
+    display: none;
+}
+.error {
+    p {
+        color: #cb2b2d;
+        font-weight: 500;
+        line-height: 1.2;
+        font-size: 80%;
+        margin-top: -10px;
+        margin-bottom: 10px;
+
+    }
+}
+.counterCar {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.billing {
+    margin: auto 5px;
+    padding: auto 10px;
+    margin-bottom: $margin-4;
+
+    &__all {
+        max-width: 600px;
+        margin: auto;
+        &--label{
+            max-width: 600px;
+            width: 90%;
+            margin: auto 5%;
+        }
+    }
+
+    &__input {
+        width: 90%;
+        display: block;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 14px;
+        max-width: 500px;
+        &--pays {
+            width: 96%;
+        }
+    }
+
+    #thankYouMessage {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 4px;
+    }
+}
+
+.loadingSpinner{
+    width:40px;
+    height:40px;
+    border:4px solid var(--main-color);
+    border-top:4px solid white;
+    border-radius:50%;
+    margin: 20px auto 40px auto;
+    animation: rotation 1s linear 4;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// attention centrer le formulaire de facturation 
+
+@media only screen and (min-width: 481px) {
+    .formpayMain {
+        section {
+            margin: auto;
+            margin-bottom: $margint-4;
+            max-width: 500px;
+
+            label {
+                font-size: $p-tablet;
+            }
+        }
+    }
+    .recapBoutique {
+        margin-bottom: $margint-3;
+        .title {
+            font-size: $h1-tablet;
+        }
+        &__total {
+            height: $margint-3;
+        }
+    }
+    .other {
+
+        i {
+            font-size: $h1-tablet;
+        }
+    }
+}
+
+.titreh2 {
+    margin-bottom: $margint-2;
+}
+
+@media only screen and (min-width: 502px) {
+    .recapBoutique {
+        &__table {
+            width: 500px;
+        }
+        td {
+            text-align: left;
+        }
+        th {
+            text-align: left;
+        }
+    }
+}

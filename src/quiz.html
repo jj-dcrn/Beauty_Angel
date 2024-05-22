@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data -->
+    <meta property ="og:site_name" content="julieducarne">
+    <meta property ="og:title" content="Beauty Angel, sublimez votre beauté">
+    <meta property ="og:description" content="Pour révéler votre beauté naturelle, choisissez Beauty Angel">
+    <meta property ="og:type" content="website">
+    <meta property ="og:url" content="https://julieducarne.be/tfa">
+    <meta property ="og:image" content="https://julieducarne.be/projets/tfa/images/tout.jpg">
+    <meta property ="og:image:width" content="280">
+    <meta property ="og:image:height" content="280">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-beauty-angel.png">
+    <title>Mon type de peau</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/app.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="assets/images/logo-removed2.png" alt="logo Beauty Angel"></a>
+
+        <nav class="navbar">
+            <div class="navbar__all">
+                <a href="index.html" class=" navbar__link">Home</a>
+                <a class="navbar__link" href="soins.html">Guide Beauty</a>
+                <a class="navbar__link" href="boutique.html">Boutique</a>
+                <a class="navbar__link navbar__link--active" href="quiz.html">Test</a>
+            </div>
+            
+        </nav>
+        <p><i class="fa-solid fa-bars" id="menu-icon"></i></p>
+    </header>
+
+
+    <h1 class="heading about__title quiz__title"><span>Votre</span> type de peau</h1>
+
+    <section class="sections intro-quiz" id="quiz">
+        <p class="intro-quiz__txt">Déterminez votre type de peau avec notre quiz interactif. Êtes-vous plutôt peau grasse, mixte ou sèche&nbsp;? Répondez aux questions pour des conseils personnalisés sur vos soins de la peau.
+        </p>
+    </section>
+
+    <section class="sections quiz">
+        <div class="quiz__quest quiz__q1">
+            <h2 class="heading">Question <span>1</span></h2>
+            <p class="quiz__txt">Votre peau est-elle sujette à des rougeurs ou à des irritations&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="irritOui" name="irritations" value="irritOui">
+                <label for="irritOui">Oui</label><br>
+                <input class="AllInputQuiz" type="radio" id="irritPfs" name="irritations" value="irritPfs">
+                <label for="irritPfs">Parfois</label><br>
+                <input class="AllInputQuiz" type="radio" id="irritNon" name="irritations" value="irritNon">
+                <label for="irritNon">Non</label><br><br>
+                </form>
+        </div>
+        <div class="quiz__quest quiz__q2">
+            <h2 class="heading">Question <span>2</span></h2>
+            <p class="quiz__txt">Comment votre peau réagit-elle au soleil&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="brule" name="cmtSoleil" value="brule">
+                <label for="brule">Elle a tendance à brûler facilement et à bronzer peu</label><br>
+                <input class="AllInputQuiz" type="radio" id="ok" name="cmtSoleil" value="ok">
+                <label for="ok">Elle brûle parfois, mais elle bronze facilement</label><br>
+                <input class="AllInputQuiz" type="radio" id="bronze" name="cmtSoleil" value="bronze">
+                <label for="bronze">Elle bronze facilement et rarement brûle</label><br><br>
+                </form>
+        </div>
+        <div class="quiz__quest quiz__q3">
+            <h2 class="heading">Question <span>3</span></h2>
+            <p class="quiz__txt">Votre peau a-t-elle tendance à être rugueuse ou squameuse&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="ouirugsquam" name="rugSquam" value="ouirugsquam">
+                <label for="ouirugsquam">Oui</label><br>
+                <input class="AllInputQuiz" type="radio" id="pfsrugsquam" name="rugSquam" value="pfsrugsquam">
+                <label for="pfsrugsquam">Parfois, surtout en hiver, elle peut être un peu rugueuse</label><br>
+                <input class="AllInputQuiz" type="radio" id="nonrugsquam" name="rugSquam" value="nonrugsquam">
+                <label for="nonrugsquam">Non, ma peau est généralement lisse et douce</label><br><br>
+                </form>
+        </div>
+        <div class="quiz__quest quiz__q4">
+            <h2 class="heading">Question <span>4</span></h2>
+            <p class="quiz__txt">Avez-vous des pores dilatés sur votre peau&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="ouipores" name="pores" value="ouipores">
+                <label for="ouipores">Oui</label><br>
+                <input class="AllInputQuiz" type="radio" id="pfspores" name="pores" value="pfspores">
+                <label for="pfspores">Un peu</label><br>
+                <input class="AllInputQuiz" type="radio" id="nonpores" name="pores" value="nonpores">
+                <label for="nonpores">Non</label><br><br>
+                </form>
+        </div>
+        <div class="quiz__quest quiz__q5">
+            <h2 class="heading">Question <span>5</span></h2>
+            <p class="quiz__txt">Votre peau est-elle sujette aux boutons ou aux imperfections&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="ouiimperfections" name="imperfections" value="ouiimperfections">
+                <label for="ouiimperfections">Oui, souvent</label><br>
+                <input class="AllInputQuiz" type="radio" id="pfsimperfections" name="imperfections" value="pfsimperfections">
+                <label for="pfsimperfections">Parfois</label><br>
+                <input class="AllInputQuiz" type="radio" id="nonimperfections" name="imperfections" value="nonimperfections">
+                <label for="nonimperfections">Non, rarement</label><br><br>
+                </form>
+        </div>
+
+
+        <div class="quiz__quest quiz__q6">
+            <h2 class="heading">Question <span>6</span></h2>
+            <p class="quiz__txt">Comment votre peau réagit-elle à l'application d'une crème hydratante&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="sechehydrat" name="hydrat" value="sechehydrat">
+                <label for="sechehydrat">Elle absorbe rapidement la crème et semble plus confortable</label><br>
+                <input class="AllInputQuiz" type="radio" id="mixtehydrat" name="hydrat" value="mixtehydrat">
+                <label for="mixtehydrat">Elle peut devenir un peu grasse après l'application, surtout dans la zone T</label><br>
+                <input class="AllInputQuiz" type="radio" id="grassehydrat" name="hydrat" value="grassehydrat">
+                <label for="grassehydrat">Elle peut sembler encore plus grasse après l'application</label><br><br>
+                </form>
+        </div>
+
+        <div class="quiz__quest quiz__q7">
+            <h2 class="heading">Question <span>7</span></h2>
+            <p class="quiz__txt">Votre peau semble-t-elle terne ou fatiguée&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="sechefatiguee" name="fatigue" value="sechefatiguee">
+                <label for="sechefatiguee">Oui, elle manque souvent d'éclat</label><br>
+                <input class="AllInputQuiz" type="radio" id="mixtefatiguee" name="fatigue" value="mixtefatiguee">
+                <label for="mixtefatiguee">Parfois, surtout dans la zone T</label><br>
+                <input class="AllInputQuiz" type="radio" id="grassefatiguee" name="fatigue" value="grassefatiguee">
+                <label for="grassefatiguee">Oui, elle semble souvent luisante et fatiguée</label><br><br>
+                </form>
+        </div>
+
+        <div class="quiz__quest quiz__q8">
+            <h2 class="heading">Question <span>8</span></h2>
+            <p class="quiz__txt">Comment votre peau réagit-elle aux changements de saison&nbsp;?</p>
+            <form class="quiz__form">
+                <input class="AllInputQuiz" type="radio" id="sechesaison" name="saison" value="sechesaison">
+                <label for="sechesaison">Elle devient souvent plus sèche et irritée en hiver</label><br>
+                <input class="AllInputQuiz" type="radio" id="mixtesaison" name="saison" value="mixtesaison">
+                <label for="mixtesaison">Elle peut devenir un peu sèche en hiver mais plus grasse en été</label><br>
+                <input class="AllInputQuiz" type="radio" id="grassesaison" name="saison" value="grassesaison">
+                <label for="grassesaison">Elle devient souvent plus grasse et sujette aux imperfections en été</label><br><br>
+                </form>
+        </div>
+
+        <input class="btn quiz__submit quiz__submit--unchecked" type="submit" value="Mon résultat" id="submitButton">
+    </section>
+
+    <section class="sections seche results seche--none" id="seche">
+        <h2 class="heading">Vous avez la peau <span>sèche</span></h2>
+        <div class="results__content">
+            <p>La peau sèche se caractérise par un manque de lipides et d'hydratation. Elle peut apparaître terne et parfois rugueuse au toucher. Les personnes ayant une peau sèche peuvent ressentir des sensations de tiraillement, en particulier après le nettoyage, et elles sont souvent sujettes aux rougeurs et aux irritations. Les pores sont généralement peu visibles sur ce type de peau.</p>
+            <p>Les causes de la peau sèche peuvent inclure des facteurs génétiques, des conditions environnementales comme le vent, le froid ou une exposition excessive au soleil, ainsi que l'utilisation de produits agressifs ou desséchants. Pour prendre soin de la peau sèche, il est recommandé d'utiliser des produits hydratants riches en lipides et d'éviter les nettoyants agressifs, tout en hydratant régulièrement la peau.</p>
+        </div>
+        <button class="btn" id="reload">Recommencer</button>
+    </section>
+
+    <section class="sections mixte results mixte--none" id="mixte">
+        <h2 class="heading">Vous avez la peau <span>mixte</span></h2>
+        <div class="results__content">
+            <p>La peau mixte présente une combinaison de zones sèches et grasses sur le visage. Généralement, la zone T est plus grasse, tandis que les joues et parfois le contour des yeux peuvent être plus secs. Les pores sont dilatés sur la zone T, et la peau peut être sujette aux imperfections et aux zones de sécheresse.</p>
+            <p>Les causes de la peau mixte sont similaires à celles de la peau sèche et grasse, incluant des facteurs génétiques, un déséquilibre hormonal et des conditions environnementales. Pour prendre soin de la peau mixte, il est recommandé d'utiliser différents produits pour les zones sèches et grasses du visage, d'équilibrer l'hydratation en utilisant des produits hydratants légers et des produits matifiants selon les besoins de chaque zone, ainsi que d'appliquer des traitements ciblés selon les besoins spécifiques de chaque zone de la peau.</p>
+        </div>
+        <button class="btn" id="reload2">Recommencer</button>
+    </section>
+    
+    <section class="sections grasse results grasse--none" id="grasse">
+        <h2 class="heading">Vous avez la peau <span>grasse</span></h2>
+        <div class="results__content">
+            <p>La peau grasse se distingue par un aspect brillant ou luisant, principalement sur la zone T du visage (front, nez, menton). Les pores sont souvent dilatés et visibles, et la peau peut être sujette à l'acné et aux boutons. Parfois, la peau grasse peut avoir une texture plus épaisse et granuleuse. Contrairement à la peau sèche, la peau grasse est moins sujette aux rides et au vieillissement prématuré.</p>
+            <p>Les causes de la peau grasse peuvent inclure une surproduction de sébum par les glandes sébacées, des facteurs génétiques et un déséquilibre hormonal. Pour prendre soin de la peau grasse, il est recommandé d'utiliser des nettoyants doux et non comédogènes, des produits matifiants pour contrôler la brillance et d'éviter de toucher le visage avec les mains sales pour réduire les risques d'acné.</p>
+        </div>
+        <button class="btn" id="reload3">Recommencer</button>
+    </section>
+    
+    <section class="entreprise">
+        <div class="entreprise__top">
+            <img class="entreprise__logo" src="assets/images/logo-removed2.png" alt="logo Beauty Angel">
+            <div class="entreprise__nav">
+                <a href="index.html" class="entreprise__link">Home</a>
+                <a class="entreprise__link" href="soins.html">Guide Beauty</a>
+                <a class="entreprise__link" href="boutique.html">Boutique</a>
+                <a class="entreprise__link" href="quiz.html">Test</a>
+            </div>
+        </div>
+        <div class="entreprise__all">
+            <div class="entreprise__flex">
+                <div class="entreprise__about">
+                    <p class="entreprise__soustitre">À propos de Beauty Angel</p>
+                    <p class="entreprise__txt">Notre histoire commence avec la passion de redéfinir les normes de la beauté en favorisant une approche naturelle et respectueuse de l'environnement. Chaque produit que nous créons est imprégné de cette philosophie, offrant à nos clients une expérience unique et bienveillante.</p>
+                </div>
+                <div class="entreprise__legal">
+                    <p class="entreprise__soustitre">Mentions légales</p>
+                    <ul class="entreprise__list">
+                        <li class="entreprise__txt">5, Somewhere Street<br>Anywhere, France</li>
+                        <li class="entreprise__txt">01/23.45.67</li>
+                        <li class="entreprise__txt">beauty_angel@gmail.com</li>
+                        <li class="entreprise__txt"><a href="#">Conditions générales de ventes</a></li>
+                        <li class="entreprise__txt"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="entreprise__pay">
+                    <p class="entreprise__soustitre">Paiements acceptés</p>
+                    <div class="entreprise__icons entreprise__icons--pay">
+                        <i class="icon_pay fa-brands fa-cc-paypal"></i>
+                        <i class="icon_pay fa-brands fa-cc-visa"></i>
+                        <i class="icon_pay fa-brands fa-cc-apple-pay"></i>
+                        <i class="icon_pay fa-brands fa-cc-discover"></i>
+                        <i class="icon_pay fa-solid fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="entreprise__infos">
+                    <p class="entreprise__soustitre">Infos</p>
+                    <p class="entreprise__txt"><i class="fa-solid fa-truck icon__info"></i> Livraison offerte</p>
+                    <p class="entreprise__txt"><i class="fa-brands fa-gratipay icon__info"></i> Satisfait ou remboursé</p>
+                    <p class="entreprise__txt"><i class="fa-solid fa-right-left icon__info"></i> Retour gratuit sous 15j</p>       
+                </div>
+            </div>
+        </div>
+        <div class="entreprise__bottom">
+            <p class="entreprise__txt">© Copyright 2024 Beauty Angel | All&nbsp;Rights&nbsp;Reserved</p>
+            <ul class="entreprise__icons entreprise__icons--social">
+                <li class="icon__social fa-brands fa-facebook"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-x-twitter"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-pinterest"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-instagram"><a href="#"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer footer--soins">
+        <ul class="footer__contact">
+            <li class="footer__el">
+                <small><a class="footer__link" href="https://julieducarne.be">© 2024 Julie DUCARNE</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" href="https://dwt.heaj.be/">DWT</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" href="credits.html">Crédits</a></small>
+            </li>
+        </ul>
+
+        <div class="footer__icon">
+            <ul class="footer__list">
+                <li class="footer__el">
+                    <a target="_blank" href="https://www.instagram.com/angelvibes_dwt/">
+                        <p><i class="fa-brands fa-instagram footer__icon"></i></p>
+                    </a>
+                </li>
+                <li class="footer__el">
+                    <a target="_blank" href="https://github.com/jj-dcrn">
+                        <p><i class="fa-brands fa-github footer__icon"></i></p>
+                    </a>
+                </li>
+                <li class="footer__el">
+                    <a target="_blank" href="https://www.youtube.com/@Angelvibes_dwt">
+                        <p><i class="fa-brands fa-youtube footer__icon"></i></p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

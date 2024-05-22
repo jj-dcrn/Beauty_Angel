@@ -1,0 +1,375 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Open Graph data -->
+        <meta property ="og:site_name" content="julieducarne">
+        <meta property ="og:title" content="Beauty Angel, sublimez votre beauté">
+        <meta property ="og:description" content="Pour révéler votre beauté naturelle, choisissez Beauty Angel">
+        <meta property ="og:type" content="website">
+        <meta property ="og:url" content="https://julieducarne.be/projets/beauty_angel">
+        <meta property ="og:image" content="https://julieducarne.be/projets/beauty_angel/assets/images/tout.jpg">
+        <meta property ="og:image:width" content="280">
+        <meta property ="og:image:height" content="280">
+    
+        <link rel="icon" type="image/x-icon" href="assets/images/logo-beauty-angel.png">
+        <title>Paiement</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="scripts/app.js" defer></script>
+    </head>
+<body>
+    <main class="formpayMain">
+        <header class="header">
+            <a href="index.html"><img class="header__logo" src="assets/images/logo-removed2.png" alt="logo Beauty Angel"></a>
+    
+            <nav class="navbar">
+                <div class="navbar__all">
+                    <a href="index.html" class=" navbar__link">Home</a>
+                    <a class="navbar__link" href="soins.html">Guide Beauty</a>
+                    <a class="navbar__link navbar__link--active" href="boutique.html">Produits</a>
+                    <a class="navbar__link" href="quiz.html">Test</a>
+                </div>      
+            </nav>
+            <p><i class="fa-solid fa-bars" id="menu-icon"></i></p>
+        </header>
+        <section class="recapBoutique"> 
+            <h1 class="title">Récapitulatif</h1>
+            <table class="recapBoutique__table" id="tableauRecap">
+                <thead>
+                    <tr>
+                        <th>Nom de l'article</th>
+                        <th>Quantite</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody id="bodytable">
+
+
+                </tbody>
+            </table>
+        </section>
+
+        <section class="other payer">
+            <h2 class="titreh2">Paiement express</h2>
+            <ul class="other__list">
+                <li>
+                    <a href="https://www.paypal.com/fr/home" target="_blank"><p><i class="fa-brands fa-cc-paypal other__icon"></i></p>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="https://www.apple.com/fr/apple-pay/"><p><i class="fa-brands fa-apple-pay other__icon"></i></p>
+                    </a>
+                </li>
+                
+            </ul>
+            <p class="other__line">ou</p>
+        </section>
+
+        <section class="contact payer">
+            <h2 class="titreh2">Contact</h2>
+            <div>
+                <label class="contact__label label" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="abc@xyz.com" required>
+                <div class="error iffault hidden">
+                    <p class="text-error">Veuillez entrer une adresse mail valide</p>
+                </div>
+            </div>
+            <div class="contact__labelAll">
+                <input class="contact__news" type="checkbox" id="offres" value="Offres" name="globalite" checked="checked">
+                <label class="label" for="offres">Envoyer des mails avec des nouvelles et des offres</label>
+            </div>
+        </section>
+
+        <section class="payment payer">
+            <h2 class="titreh2">Paiement</h2>
+            <p class="payment__intro">Toutes les transactions sont sécurisées et cryptées.</p>
+
+            <div class="payment__all">
+            <!-- crédit -->
+                <div id="div__credit" class="credit payment__sort"> 
+                    <div class="credit__intro payment__sort--partial">
+                        <div class="credit__label">
+                            <input class="input-radio1 radio-js" type="radio" id="credit" value="credit" name="globalite" checked>
+                            <label class="label label__cursor" for="credit">Carte de crédit</label>
+                        </div>
+                        <div class="credit__icon">
+                            <p><i class="fa-brands fa-cc-visa"></i></p>
+                            <p><i class="fa-brands fa-cc-mastercard"></i></p>
+                            <p><i class="fa-brands fa-cc-discover"></i></p>
+                        </div>
+                    </div>
+
+                    <div id="credit__hidden" class="hidden">
+                        <div class="credit__infos">
+                            <label class="label" for="numc">Numéro de carte*</label>
+                            <input type="text" id="numc" name="numc" placeholder="****************" required>
+                        </div>
+                        <div class="error iffault2 hidden">
+                            <p>Veuillez remplir ce champ</p>
+                        </div>
+                            <div>
+                                <div class="credit__infos">
+                                    <label class="label" for="exp">Date d'expiration*</label>  
+                                    <input type="text" id="exp" name="exp" placeholder="MM/AA" required>
+                                    <div class="error iffault3 hidden">
+                                        <p>Veuillez remplir ce champ</p>
+                                    </div>
+                                </div>
+                                <div class="credit__infos">
+                                    <label class="label" for="cvc">Code de sécurité CVC*</label>
+                                    <input type="text" id="cvc" name="cvc" placeholder="123" required>
+                                    <div class="error iffault4 hidden">
+                                        <p>Veuillez remplir ce champ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="credit__infos">
+                                <label for="cartname">Nom sur la carte*</label>
+                                <input type="text" id="cartname" name="cartname" placeholder="Charles Lacour" required>
+                                <div class="error iffault5 hidden">
+                                    <p>Veuillez remplir ce champ</p>
+                                </div>
+                            </div>
+                        
+                    </div>  
+                </div>
+
+                <!-- paypal -->
+                <div id="div__paypal" class="paypal payment__sort">
+                    <div class="paypal__intro payment__sort--partial">
+                        <div class="paypal__label">
+                            <input class="input-radio2 radio-js" type="radio" id="paypal" value="paypal" name="globalite">
+                            <label class="label label__cursor" for="paypal">PayPal</label>
+                        </div>
+                        <i class="fa-brands fa-paypal payment__icon"></i>
+                    </div>
+
+                    <div id="paypal__hidden" class="hidden paypal__textes">
+                        <p>Après avoir cliqué sur “&#8239;Payer avec PayPal&#8239;” , vous serez redirigé vers PayPal pour finaliser votre achat en toute sécurité.</p>
+                        <a class="payement__link" href="https://www.paypal.com/fr/home" target="_blank">Payer avec PayPal</a>
+                    </div> 
+                </div>
+
+                <!-- applepay -->
+                <div id="div__applepay" class="applepay payment__sort">
+                    <div class="applepay__intro payment__sort--partial">
+                        <div class="applepay__label">
+                            <input class="input-radio2 radio-js" type="radio" id="applepay" value="applepay" name="globalite">
+                            <label class="label label__cursor" for="applepay">ApplePay</label>
+                        </div>
+                        <i class="fa-brands fa-apple-pay payment__icon"></i>
+                    </div>
+
+                    <div id="applepay__hidden" class="applepay__textes hidden">
+                        <p>Après avoir cliqué sur “&#8239;Payer avec ApplePay&#8239;”, vous serez redirigé vers ApplePay pour finaliser votre achat en toute sécurité.</p>
+                        <a class="payement__link" href="https://www.apple.com/fr/apple-pay/">Payer avec ApplePay</a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cadeau payer">
+            <h2 class="titreh2">Pour qui achetez-vous&nbsp;?</h2>
+            <div>
+                <input class="checkbox-js label__cursor" type="checkbox" id="moi" value="moi" name="cadeau">
+                <label class="label label__cursor" for="moi">J'achète pour moi</label>
+            </div>
+            <div>
+                <input class="checkbox-js label__cursor" type="checkbox" id="checkboxAutre" value="autre" name="cadeau">
+                <label class="label label__cursor" for="checkboxAutre">J'achète pour offrir</label>
+            </div>
+            <div class="cadeaux hidden">
+                <div>
+                    <input class="checkbox-js label__cursor" type="checkbox" id="papiercadeau" value="papiercadeau" name="cadeausupp">
+                    <label class="label label__cursor" for="papiercadeau">Je souhaite un emballage cadeau</label>
+                </div>
+                <div>
+                    <input class="checkbox-js label__cursor" type="checkbox" id="petitmot" value="petitmot" name="cadeausupp">
+                    <label class="label label__cursor" for="petitmot">Je souhaite laisser un petit mot</label>
+                </div>
+                <div class="textarea" id="testrouge">
+                    <label class="label" for="message">Écrivez votre message ici (facultatif)</label>
+                    <textarea class="cadeau__textarea" name="message" id="message"></textarea>
+                    <div id="counterCar" class="counterCar">100 caractères restants</div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="billing payer">
+            <h2 class="titreh2">Adresse de facturation</h2>
+            <div class="all">
+                <div class="billing__all--label">
+                    <label class="label" for="pays">Pays</label>
+                    <select class="billing__input billing__input--pays" name="pays" id="pays">
+                        <option value="Belgique">Belgique</option>
+                        <option value="France">France</option>
+                        <option value="Espagne">Espagne</option>
+                        <option value="Italie">Italie</option>
+                        <option value="Allemagne">Allemagne</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div class="billing__all--label">
+                        <label class="label" id="label__firstname"  for="firstname">Prénom*</label>
+                        <input class="billing__input" type="text" id="firstname" name="firstname" placeholder="Albert" required>
+                        <div class="error iffault6 hidden">
+                            <p>Veuillez remplir ce champ</p>
+                        </div>
+                    </div>
+                    <div class="billing__all--label">
+                        <label class="label" id="label__name" for="name">Nom*</label>
+                        <input class="billing__input" type="text" id="name" name="name" placeholder="Jacquard" required>
+                        <div class="error iffault7 hidden">
+                            <p>Veuillez remplir ce champ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="billing__all--label">
+                    <label class="label" for="adresse">Adresse*</label>
+                    <input class="billing__input" type="text" id="adresse" name="adresse" placeholder="4, Rue des Coquelicots" required>
+                    <div class="error iffault8 hidden">
+                        <p>Veuillez remplir ce champ</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="billing__all--label">
+                        <label class="label" id="label__tel" for="postal">Code postal*</label>
+                        <input class="billing__input" type="text" id="postal" name="postal" placeholder="1234" required>
+                        <div class="error iffault9 hidden">
+                            <p>Veuillez remplir correctement ce champ</p>
+                        </div>
+                    </div>
+                    <div class="billing__all--label">
+                        <label class="label" id="label__ville" for="ville">Ville*</label>
+                        <input class="billing__input" type="text" id="ville" name="ville" placeholder="Villejean" required>
+                        <div class="error iffault10 hidden">
+                            <p>Veuillez remplir ce champ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="billing__all--label">
+                    <label class="label" for="tel">Tel.</label>
+                    <input class="billing__input" type="tel" id="tel" name="tel" placeholder="01020304">
+                    <div class="error iffault11 hidden">
+                        <p>Veuillez remplir correctement ce champ</p>
+                    </div>
+                </div>
+                <button class="btn btnjs" id="btnjs">Payer</button>
+
+                <div class="loadingSpinner hidden" id="loadingSpinner"></div>
+                <div class="hidden" id="thankYouMessage">
+                    <p>Nous vous remercions de votre achat. Votre commande sera livrée d'ici 5 jours.</p>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+    <section class="entreprise">
+        <div class="entreprise__top">
+            <img class="entreprise__logo" src="assets/images/logo-removed2.png" alt="logo Beauty Angel">
+            <div class="entreprise__nav">
+                <a href="index.html" class="entreprise__link">Home</a>
+                <a class="entreprise__link" href="soins.html">Guide Beauty</a>
+                <a class="entreprise__link" href="boutique.html">Produits</a>
+                <a class="entreprise__link" href="quiz.html">Test</a>
+            </div>
+        </div>
+        <div class="entreprise__all">
+            <div class="entreprise__flex">
+                <div class="entreprise__about">
+                    <p class="entreprise__soustitre">À propos de Beauty Angel</p>
+                    <p class="entreprise__txt">Notre histoire commence avec la passion de redéfinir les normes de la beauté en favorisant une approche naturelle et respectueuse de l'environnement. Chaque produit que nous créons est imprégné de cette philosophie, offrant à nos clients une expérience unique et bienveillante.</p>
+                </div>
+                <div class="entreprise__legal">
+                    <p class="entreprise__soustitre">Mentions légales</p>
+                    <ul class="entreprise__list">
+                        <li class="entreprise__txt">5, Somewhere Street<br>Anywhere, France</li>
+                        <li class="entreprise__txt">01/23.45.67</li>
+                        <li class="entreprise__txt">beauty_angel@gmail.com</li>
+                        <li class="entreprise__txt"><a href="#">Conditions générales de ventes</a></li>
+                        <li class="entreprise__txt"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="entreprise__pay">
+                    <p class="entreprise__soustitre">Paiements acceptés</p>
+                    <div class="entreprise__icons entreprise__icons--pay">
+                        <i class="icon__pay fa-brands fa-cc-paypal"></i>
+                        <i class="icon__pay fa-brands fa-cc-visa"></i>
+                        <i class="icon__pay fa-brands fa-cc-apple-pay"></i>
+                        <i class="icon__pay fa-brands fa-cc-discover"></i>
+                        <i class="icon__pay fa-solid fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="entreprise__infos">
+                    <p class="entreprise__soustitre">Infos</p>
+                    <p class="entreprise__txt"><i class="fa-solid fa-truck icon__info"></i> Livraison offerte</p>
+                    <p class="entreprise__txt"><i class="fa-brands fa-gratipay icon__info"></i> Satisfait ou remboursé</p>
+                    <p class="entreprise__txt"><i class="fa-solid fa-right-left icon__info"></i> Retour gratuit sous 15j</p>       
+                </div>
+            </div>
+        </div>
+        <div class="entreprise__bottom">
+            <p class="entreprise__txt">© Copyright 2024 Beauty Angel | All&nbsp;Rights&nbsp;Reserved</p>
+            <ul class="entreprise__icons entreprise__icons--social">
+                <li class="icon__social fa-brands fa-facebook"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-x-twitter"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-pinterest"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-instagram"><a href="#"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__contact">
+            <li class="footer__el">
+                <small><a class="footer__link" href="https://julieducarne.be">© 2024 Julie DUCARNE </a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" href="https://dwt.heaj.be/">DWT</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" href="credits.html">Crédits</a></small>
+            </li>
+        </ul>
+
+        <div class="footer__icon">
+            <ul class="footer__list">
+                <li class="footer__el">
+                    <a target="_blank" href="https://www.instagram.com/angelvibes_dwt/">
+                        <p><i class="fa-brands fa-instagram footer__icon"></i></p>
+                    </a>
+                </li>
+                <li class="footer__el">
+                    <a target="_blank" href="https://github.com/jj-dcrn">
+                        <p><i class="fa-brands fa-github footer__icon"></i></p>
+                    </a>
+                </li>
+                <li class="footer__el">
+                    <a target="_blank" href="https://www.youtube.com/@Angelvibes_dwt">
+                        <p><i class="fa-brands fa-youtube footer__icon"></i></p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

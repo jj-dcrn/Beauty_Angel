@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr" id="HTMLID">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph data -->
+    <meta property ="og:site_name" content="julieducarne">
+    <meta property ="og:title" content="Beauty Angel, sublimez votre beauté">
+    <meta property ="og:description" content="Pour révéler votre beauté naturelle, choisissez Beauty Angel">
+    <meta property ="og:type" content="website">
+    <meta property ="og:url" content="https://julieducarne.be/projets/beauty_angel">
+    <meta property ="og:image" content="https://julieducarne.be/projets/beauty_angel/assets/images/tout.jpg">
+    <meta property ="og:image:width" content="280">
+    <meta property ="og:image:height" content="280">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-beauty-angel.png">
+    <title>La boutique</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/app.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html"><img class="header__logo" src="assets/images/logo-removed2.png" alt="logo Beauty Angel"></a>
+
+        <nav class="navbar">
+            <div class="navbar__all">
+                <a href="index.html" class=" navbar__link">Home</a>
+                <a class="navbar__link" href="soins.html">Guide Beauty</a>
+                <a class="navbar__link navbar__link--active" href="boutique.html">Boutique</a>
+                <a class="navbar__link" href="quiz.html">Test</a>
+            </div>      
+        </nav>
+        <p><i class="fa-solid fa-bars" id="menu-icon"></i></p>
+    </header>
+
+    <main class="boutique">
+
+        <section class="introB">
+            <h1 class="about__title introB__title"><span>Bienvenue</span> sur notre boutique en&nbsp;ligne&nbsp;!</h1>
+            <p class="introB__txt introB__txt--weight">Retrouvez vos produits Beauty Angel <span>préférés</span> en 2 clics&nbsp;!</p>
+        </section>
+
+        <section class="present">
+            <div class="present__allProducts">
+                <div class="present__product">
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="item active">
+                                <img class="present__img present__img--lotion" src="assets/images/creme-inhand.png" alt="body lotion Beauty Angel">
+                            </div>
+                            <div class="item">
+                                <img class="present__img present__img--lotion" src="assets/images/lotion-p.png" alt="packaging Body lotion Beauty Angel">
+                            </div>
+                            <div class="item">
+                                <img class="present__img present__img--lotion" src="assets/images/lotion-alone.png" alt="packaging Body lotion Beauty Angel">
+                            </div>
+                            <div class="item">
+                                <img class="present__img present__img--lotion" src="assets/images/infosLotion.png" alt="informations sur la lotion">
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-left prev"></i>
+                        <i class="fa-solid fa-chevron-right next"></i>
+                    </div>
+                    
+                    <div class="present__info">
+                        <div>
+                            <h3 class="present__h3">Body lotion</h3>
+                            <p>9.90€</p>
+                            <p class="present__poids">100ml</p>
+                        </div>
+                        <div class="present__allInput">
+                            <div class="flex">
+                                <div>
+                                    <input id="sensibleL" type="radio" name="peau" value="sensibleL">
+                                    <label for="sensibleL">Sensible</label>
+                                </div>
+                                <div>
+                                    <input id="mixteC" type="radio" name="peau" value="mixteC">
+                                    <label for="mixteC">Mixte</label>
+                                </div>
+                            </div>
+                            <div>
+                                <input id="secheS" type="radio" name="peau" value="secheS">
+                                <label for="secheS">Sèche</label>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <button class="present__txt present__remove BoutonChaqueArticle" id="lotionRemove" name="Body Lotion" value="9.90">Remove</button>
+                            <button id="decrementCounter1Lotion" class="button BoutonChaqueArticle" name="Body Lotion" value="9.90">-</button>
+                                <button class="present__button--none" name="Body Lotion Count">0</button>
+                            <button id="incrementCounter1Lotion" class="button BoutonChaqueArticle" name="Body Lotion" value="9.90">+</button>
+                        </div>
+                    </div>
+                    <button class="present__txt--minus present__button--none" name="Body Lotion Price" id="lotion">0.00 €</button> <!-- Le résultat sera affiché ici pour la première div -->
+                </div>
+
+
+
+                <div class="present__product">
+                    <div class="carousel-container">
+                        <div class="carousel2">
+                            <div class="item2 active">
+                                <img class="present__img" src="assets/images/pot-carton.png" alt="Packaging body cream Beauty Angel">
+                            </div>
+                            <div class="item2">
+                                <img class="present__img present__img--lotion" src="assets/images/cream-p.png" alt="packaging Body cream Beauty Angel">
+                            </div>
+                            <div class="item2">
+                                <img class="present__img present__img--lotion" src="assets/images/pot.png" alt="packaging Body cream Beauty Angel">
+                            </div>
+                            <div class="item2">
+                                <img class="present__img present__img--lotion" src="assets/images/infosCream.png" alt="informations cream Beauty Angel">
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-left prev2"></i>
+                        <i class="fa-solid fa-chevron-right next2"></i>
+                    </div>
+
+                    <div class="present__info">
+                        <div>
+                            <h3 class="present__h3">Body cream</h3>
+                            <p>10.80€</p>
+                            <p class="present__poids">150g</p>
+                        </div>
+                        <!-- <p id="test">plus d'infos</p> -->
+                        <div class="present__allInput">
+                            <div class="flex">
+                                <div>
+                                    <input id="sensibleL2" type="radio" name="peau2" value="sensibleL2">
+                                    <label for="sensibleL2">Sensible</label>
+                                </div>
+                                <div>
+                                    <input id="mixteC2" type="radio" name="peau2" value="mixteC2">
+                                    <label for="mixteC2">Mixte</label>
+                                </div>
+                            </div>
+                            <div>
+                                <input id="secheS2" type="radio" name="peau2" value="secheS2">
+                                <label for="secheS2">Sèche</label>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <button class="present__txt present__remove BoutonChaqueArticle" id="creamRemove" name="Body cream" value="10.80">Remove</button>
+                            <button id="decrementCounter3Huile" class="button BoutonChaqueArticle" name="Body cream" value="10.80">-</button>
+                            <button class="present__button--none" name="Body cream Count">0</button>
+                            <button id="incrementCounter3Huile" class="button BoutonChaqueArticle" name="Body cream" value="10.80">+</button>
+                        </div>
+                    </div>
+                    <button class="present__txt--minus present__button--none" name="Body cream Price" id="creme">0.00 €</button> <!-- Le résultat sera affiché ici pour la troisième div -->
+                </div>
+
+
+
+                <div class="present__product">
+                    <div class="carousel-container">
+                        <div class="carousel3">
+                            <div class="item3 active">
+                                <img class="present__img" src="assets/images/serum-mixte.png" alt="body serum Beauty Angel">
+                            </div>
+                            <div class="item3">
+                                <img class="present__img present__img--lotion" src="assets/images/serum-p.png" alt="packaging Body serum Beauty Angel">
+                            </div>
+                            <div class="item3">
+                                <img class="present__img present__img--lotion" src="assets/images/infosSerum.png" alt="informations Beauty Angel">
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-chevron-left prev3"></i>
+                        <i class="fa-solid fa-chevron-right next3"></i>
+                    </div>
+                    <div class="present__info">
+                        <div>
+                            <h3 class="present__h3">Body serum</h3>
+                            <p>12€</p>
+                            <p class="present__poids">75ml</p>
+                        </div>
+                        <div class="present__allInput">
+                            <div class="flex">
+                                <div>
+                                    <input id="sensibleL3" type="radio" name="peau3" value="sensibleL3">
+                                    <label for="sensibleL3">Sensible</label>
+                                </div>
+                                <div>
+                                    <input id="mixteC3" type="radio" name="peau3" value="mixteC3">
+                                    <label for="mixteC3">Mixte</label>
+                                </div>
+                            </div>
+                            <div>
+                                <input id="secheS3" type="radio" name="peau3" value="secheS3">
+                                <label for="secheS3">Sèche</label>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <button class="present__txt present__remove BoutonChaqueArticle" id="serumRemove" name="Body serum" value="12">Remove</button>
+                            <button id="decrementCounter2Creme" class="button BoutonChaqueArticle" name="Body serum" value="12">-</button>
+                            <button class="present__button--none" name="Body serum Count">0</button>
+                            <button id="incrementCounter2Creme" class="button BoutonChaqueArticle" name="Body serum" value="12">+</button>
+                        </div>
+                    </div>
+                    <button class="present__txt--minus present__button--none" name="Body serum Price" id="huile">0.00 €</button> <!-- Le résultat sera affiché ici pour la deuxième div -->
+                </div>
+            </div>
+        </section>
+
+
+        <div class="boutique__cart">
+            <p id="totalItems">0</p>            
+
+            <button id="goForm" type="submit" class="link-button" disabled>
+                <i id="cartPanier" class="fa-solid fa-cart-shopping boutique__panier"></i>
+            </button>
+            <p id="total">0.00 €</p>
+
+        </div>
+
+    </main>
+
+    <section class="entreprise">
+        <div class="entreprise__top">
+            <img class="entreprise__logo" src="assets/images/logo-removed2.png" alt="logo Beauty Angel">
+            <div class="entreprise__nav">
+                <a href="index.html" class="entreprise__link">Home</a>
+                <a class="entreprise__link" href="soins.html">Guide Beauty</a>
+                <a class="entreprise__link" href="boutique.html">Boutique</a>
+                <a class="entreprise__link" href="quiz.html">Test</a>
+            </div>
+        </div>
+        <div class="entreprise__all">
+            <div class="entreprise__flex">
+                <div class="entreprise__about">
+                    <p class="entreprise__soustitre">À propos de Beauty Angel</p>
+                    <p class="entreprise__txt">Notre histoire commence avec la passion de redéfinir les normes de la beauté en favorisant une approche naturelle et respectueuse de l'environnement. Chaque produit que nous créons est imprégné de cette philosophie, offrant à nos clients une expérience unique et bienveillante.</p>
+                </div>
+                <div class="entreprise__legal">
+                    <p class="entreprise__soustitre">Mentions légales</p>
+                    <ul class="entreprise__list">
+                        <li class="entreprise__txt">5, Somewhere Street<br>Anywhere, France</li>
+                        <li class="entreprise__txt">01/23.45.67</li>
+                        <li class="entreprise__txt">beauty_angel@gmail.com</li>
+                        <li class="entreprise__txt"><a href="#">Conditions générales de ventes</a></li>
+                        <li class="entreprise__txt"><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="entreprise__pay">
+                    <p class="entreprise__soustitre">Paiements acceptés</p>
+                    <div class="entreprise__icons entreprise__icons--pay">
+                        <i class="icon_pay fa-brands fa-cc-paypal"></i>
+                        <i class="icon_pay fa-brands fa-cc-visa"></i>
+                        <i class="icon_pay fa-brands fa-cc-apple-pay"></i>
+                        <i class="icon_pay fa-brands fa-cc-discover"></i>
+                        <i class="icon_pay fa-solid fa-credit-card"></i>
+                    </div>
+                </div>
+                <div class="entreprise__infos">
+                    <p class="entreprise__soustitre">Infos</p>
+                    <p class="entreprise__txt"><i class="fa-solid fa-truck icon__info"></i> Livraison offerte</p>
+                    <p class="entreprise__txt"><i class="fa-brands fa-gratipay icon__info"></i> Satisfait ou remboursé</p>
+                    <p class="entreprise__txt"><i class="fa-solid fa-right-left icon__info"></i> Retour gratuit sous 15j</p>       
+                </div>
+            </div>
+        </div>
+        <div class="entreprise__bottom">
+            <p class="entreprise__txt">© Copyright 2024 Beauty Angel | All&nbsp;Rights&nbsp;Reserved</p>
+            <ul class="entreprise__icons entreprise__icons--social">
+                <li class="icon__social fa-brands fa-facebook"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-x-twitter"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-pinterest"><a href="#"></a></li>
+                <li class="icon__social fa-brands fa-instagram"><a href="#"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer footer--soins">
+        <ul class="footer__contact">
+            <li class="footer__el">
+                <small><a class="footer__link" href="https://julieducarne.be">© 2024 Julie DUCARNE</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" href="https://dwt.heaj.be/">DWT</a></small>
+            </li>
+            <li class="footer__el">
+                <small><a class="footer__link" href="credits.html">Crédits</a></small>
+            </li>
+        </ul>
+
+        <div class="footer__icon">
+            <ul class="footer__list">
+                <li class="footer__el">
+                    <a target="_blank" href="https://www.instagram.com/angelvibes_dwt/">
+                        <p><i class="fa-brands fa-instagram footer__icon"></i></p>
+                    </a>
+                </li>
+                <li class="footer__el">
+                    <a target="_blank" href="https://github.com/jj-dcrn">
+                        <p><i class="fa-brands fa-github footer__icon"></i></p>
+                    </a>
+                </li>
+                <li class="footer__el">
+                    <a target="_blank" href="https://www.youtube.com/@Angelvibes_dwt">
+                        <p><i class="fa-brands fa-youtube footer__icon"></i></p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
+

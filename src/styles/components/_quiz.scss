@@ -1,0 +1,137 @@
+.quiz {
+    margin-bottom: 0px;
+    &__quest {
+        margin-bottom: $margin-3;
+    }
+    &__txt {
+        font-weight: bolder;
+        margin-bottom: 10px;
+    }
+    &__title {
+        text-align: center;
+        margin: $margin-2 auto;
+    }
+    label {
+        cursor: pointer;
+    }
+    input[type="radio"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 5px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    input[type="radio"]:checked {
+        background-color: var(--green-color);
+        border-color: var(--green-color); 
+        cursor: pointer;
+    }
+    .heading {
+        margin-bottom: $margin-2;
+    }
+    &__submit {
+        &--unchecked {
+        background-color: rgb(194, 194, 194);
+        border-color: rgb(166, 166, 166);
+        color: rgb(88, 88, 88);
+
+            &:hover {
+                background-color: rgb(194, 194, 194);
+                border-color: rgb(166, 166, 166);
+                color: rgb(88, 88, 88);
+            }
+        }
+    }
+    
+}
+.intro-quiz {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    &__txt {
+        margin-bottom: $margin-6;
+    }
+}
+
+
+.seche,
+.mixte,
+.grasse {
+    display: block;
+    line-height: 1.6;
+}
+
+.seche--none {display: none;} 
+.mixte--none {display: none;} 
+.grasse--none {display: none;}
+
+.quiz__submit--none {
+    display: none;
+}
+
+
+@media only screen and (min-width: 481px) {
+    .intro-quiz,
+    .quiz,
+    .seche,
+    .mixte,
+    .grasse {
+        margin: auto;
+        max-width: 60ch;
+    }
+    .quiz {
+        &__title {
+            font-size: $h1-tablet;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .seche,
+    .mixte,
+    .grasse {
+        margin: auto;
+        max-width: 90ch;
+    }
+    .quiz {
+        &__title {
+            font-size: $h1-desktop;
+            margin: $margind-2 auto;
+        }
+        &__quest {
+            margin-bottom: $margind-3;
+        }
+        .heading {
+            margin-bottom: $margind-2;
+        }
+        p {
+            font-size: $p-desktop;
+        }
+        label {
+            font-size: $p-tablet;
+        }
+        &__submit {
+            margin-bottom: $margind-2;
+            margin-top: 0;
+        }
+    }
+    .intro-quiz {
+        &__txt {
+            margin-bottom: $margind-4;
+        }
+    }
+    .results {
+        margin-bottom: $margind-4;
+
+        &__content {
+            p {
+                margin-bottom: $margind-1;
+            }
+        }
+    }
+}
